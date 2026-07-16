@@ -1,3 +1,4 @@
+from mesh_generator import *
 import sys
 import os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -20,7 +21,6 @@ os.makedirs("../figures", exist_ok=True)
 
 def plot_figure_1():
     """Figure 1: Different mesh families visualised."""
-    from mesh_generator import *
     n = 40
     meshes = {
         'Uniform': uniform_mesh(n),
