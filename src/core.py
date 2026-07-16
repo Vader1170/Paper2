@@ -1,6 +1,6 @@
 import numpy as np
 from scipy.special import eval_legendre
-from scipy.linalg import cond
+from numpy.linalg import cond
 
 def build_gram_matrix(x, weights, m=5):
     """
